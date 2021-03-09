@@ -66,14 +66,15 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #fff;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #aaf6f8;
+   font-weight: bold;
 }
 header .banner-text hr {
    width: 60%;
@@ -179,7 +180,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #11ABB0; } /*color links header index*/
 
 
 /* ------------------------------------------------------------------ */
@@ -187,9 +188,11 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #1A1A1A;
+   background: #16191f;
    padding-top: 96px;
    padding-bottom: 66px;
+   background-size: cover !important;
+   -webkit-background-size: cover !important; 
    overflow: hidden;
 }
 
@@ -219,7 +222,7 @@ ul#nav li.current a { color: #F06000; }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
    margin-top: 6px;
-   background: #FF9429; /* color boton download, naranja */
+   background: #11ABB0; /* color boton download, naranja */
    color: #2B2B2B;
 }
 #about .download .button:hover {
@@ -237,14 +240,14 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #2B2B2B;
+   background: #1c1d21;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #fff; }
+#resume a, #resume a:visited  { color: #fff; }
+#resume a:hover, #resume a:focus { color: #11ABB0; }
 
 #resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
@@ -259,6 +262,10 @@ ul#nav li.current a { color: #F06000; }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    color: #fff;
+}
+
+#resume h3 a{
+   text-decoration: underline;
 }
 
 #resume .header-col { padding-top: 9px; }
@@ -1007,3 +1014,66 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/* ------------------------------------------------------------------ */
+/* j. Blog
+/* ------------------------------------------------------------------ */
+
+
+#blog {
+   background: #2B2B2B;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+   text-align: center;
+}
+
+#blog a, #blog a:visited  { color: #fff; }
+#blog a:hover, #blog a:focus { color: #11ABB0; }
+
+#blog h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   color: #fff;
+   /*text-transform: uppercase;*/
+   letter-spacing: 1px;
+}
+#blog h1 span {
+   border-bottom: 2px solid #fff;
+   padding-bottom: 6px;
+}
+#blog h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+}
+
+#blog .header-col { padding-top: 9px; }
+#blog .main-col { padding-right: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#blog .info {
+   color: #8d969f;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#blog .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#blog .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+   color: #b2bbc4;
+}
+
+#blog .text {
+    text-align: justify;
+}
+
+#blog hr {
+   border-color: #11ABB0;
+   margin: 18px auto 24px auto;
+   border-style: dashed;
+}
