@@ -11100,3 +11100,15 @@ a:hover .tooltip {
         width: 95%;
     }
 }
+
+
+
+
+.code-block {
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the block */
+    font-family: Consolas, monaco, monospace; /* Monospaced font */
+    overflow-x: auto; /* Adds horizontal scroll if content is too wide */
+    text-align: left;
+}
