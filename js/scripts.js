@@ -32,3 +32,40 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Popups
+
+const openPopups = document.querySelectorAll(".openPopup");
+const popups = document.querySelectorAll(".popup-container");
+const closeButtons = document.querySelectorAll(".close-btn");
+
+openPopups.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const popupId = this.getAttribute("data-popup");
+        document.getElementById(popupId).style.display = "flex";
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        this.closest(".popup-container").style.display = "none";
+    });
+});
+
+window.addEventListener("click", function(event) {
+    popups.forEach(popup => {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        popups.forEach(popup => {
+            popup.style.display = "none";
+        });
+    }
+});
